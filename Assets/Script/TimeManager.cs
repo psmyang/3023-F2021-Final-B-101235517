@@ -51,7 +51,7 @@ public class TimeManager : MonoBehaviour
             minutes = 0;
         }
 
-        if (hours >= 24)
+        if (hours >= 12)
         {
             days += 1;
             weekCounter += 1;
