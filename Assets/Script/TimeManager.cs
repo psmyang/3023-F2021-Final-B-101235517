@@ -49,6 +49,19 @@ public class TimeManager : MonoBehaviour
 
     void Update()
     {
+        //Cheating
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            days++;
+            weekCounter++;
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            days--;
+            weekCounter--;
+        }
+
+
         time += Time.deltaTime;
 
         if (time >= 0.01)
