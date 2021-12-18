@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a460de2ea2f3b54f8bf083047062648, type: 3}
-  m_Name: CalendarDay
+  m_Name: Spooky Day
   m_EditorClassIdentifier: 
   Season: 0
-  SeasonEvent: {fileID: 0}
-  weatherSprite: []
+  SeasonIMG: {fileID: 21300000, guid: cf786d06bea760a4991fdf53e9f0af28, type: 3}
+  WeatherIMG:
+  - {fileID: 21300000, guid: 9f7feabde9ca252429d272992f2be5d3, type: 3}
   changeWeatherRate: 0

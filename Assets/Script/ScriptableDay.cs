@@ -18,8 +18,8 @@ public class ScriptableDay : ScriptableObject
     }
 
     public Seasons Season;
-    public Sprite SeasonEvent;
-    public Sprite[] weatherSprite;
+    public Sprite SeasonIMG;
+    public Sprite[] WeatherIMG;
 
     [Range(0, 100)]
     public int changeWeatherRate;
