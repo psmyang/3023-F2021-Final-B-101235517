@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class TimeManager : MonoBehaviour
 {
@@ -15,7 +16,17 @@ public class TimeManager : MonoBehaviour
 
     public static TimeManager instance;
 
-   private void Awake()
+    [SerializeField]
+    private Light2D light;
+
+    [SerializeField]
+    private AudioSource[] audioList;
+
+    //Light
+    private Color initialColor;
+    private float initialIntensity;
+
+    private void Awake()
     {
         if (instance == null)
         {
@@ -33,6 +44,7 @@ public class TimeManager : MonoBehaviour
         weekCounter = 1;
         weeks = 1;
         years = 2021;
+
     }
 
     void Update()
@@ -51,7 +63,7 @@ public class TimeManager : MonoBehaviour
             minutes = 0;
         }
 
-        if (hours >= 12)
+        if (hours >= 10)
         {
             days += 1;
             weekCounter += 1;
@@ -68,6 +80,28 @@ public class TimeManager : MonoBehaviour
             years += 1;
             weeks = 1;
             days = 1;
+        }
+
+        if (days == 11)
+        {
+            light.intensity = 1;
+            light.color = new Color(0.79f, 0.70f, 0.60f, 1);
+        }
+        else
+        {
+            light.intensity = 0.86f;
+            light.color = new Color(0.990566f, 0.8192417f, 0.8826951f, 1);
+        }
+
+        if (days == 21)
+        {
+            light.intensity = 0.5f;
+            light.color = Color.blue;
+        }
+        else
+        {
+            light.intensity = 0.86f;
+            light.color = new Color(0.990566f, 0.8192417f, 0.8826951f, 1);
         }
     }
 }

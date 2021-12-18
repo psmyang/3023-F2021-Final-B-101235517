@@ -12,7 +12,7 @@ public class Day : MonoBehaviour
 
     [SerializeField]
     private ScriptableDay scriptableDay;
-    private bool isWeatherChange;
+    public bool isWeatherChange;
 
     private Image weatherIcon;
     private Image seasonIcon;
@@ -35,16 +35,7 @@ public class Day : MonoBehaviour
             day = ((int)char.GetNumericValue(chars[5]) * 10 + (int)char.GetNumericValue(chars[6]));
         }
 
-        if (scriptableDay.changeWeatherRate <= Random.Range(0, 100))
-        {
-            weatherIcon.sprite = scriptableDay.WeatherIMG[0];
-            isWeatherChange = false;
-        }
-        else
-        {
-            weatherIcon.sprite = scriptableDay.WeatherIMG[1];
-            isWeatherChange = true;
-        }
+        SetWeatherIcon();
 
         seasonIcon.sprite = scriptableDay.SeasonIMG;
 
@@ -61,7 +52,8 @@ public class Day : MonoBehaviour
         else
         {
             dayText.color = Color.yellow;
-        }  
+        }
+
     }
 
     private bool CurrentDay()
@@ -76,4 +68,17 @@ public class Day : MonoBehaviour
         }
     }
 
+    public void SetWeatherIcon()
+    {
+        if (scriptableDay.changeWeatherRate <= Random.Range(0, 100))
+        {
+            weatherIcon.sprite = scriptableDay.WeatherIMG[0];
+            isWeatherChange = false;
+        }
+        else
+        {
+            weatherIcon.sprite = scriptableDay.WeatherIMG[1];
+            isWeatherChange = true;
+        }
+    }
 }

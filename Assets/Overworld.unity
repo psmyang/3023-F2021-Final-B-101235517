@@ -773,6 +773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 6fd58c7513e2c384b98c4a7a4ca6a5d6, type: 2}
+  isWeatherChange: 0
 --- !u!114 &16271237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1067,6 +1068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 91724441bb9af344bb7eaa3ed0abc50e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &111255688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1272,6 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: f8487593ae550194aa726a2b37d70fd6, type: 2}
+  isWeatherChange: 0
 --- !u!1 &146494410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,6 +1404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: f8487593ae550194aa726a2b37d70fd6, type: 2}
+  isWeatherChange: 0
 --- !u!114 &156358201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1927,6 +1931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 602e66863bdd6084b8571fea0987655e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &203555209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2169,6 +2174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 91724441bb9af344bb7eaa3ed0abc50e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &250698107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4642,6 +4648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: f8487593ae550194aa726a2b37d70fd6, type: 2}
+  isWeatherChange: 0
 --- !u!114 &498235228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4806,13 +4813,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5086130329784667123, guid: 6f1aebeb7e9e2f844a6101f396d2115e, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086130329784667123, guid: 6f1aebeb7e9e2f844a6101f396d2115e, type: 3}
+      propertyPath: lengthInSec
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086130329784667123, guid: 6f1aebeb7e9e2f844a6101f396d2115e, type: 3}
+      propertyPath: useRigidbodyForVelocity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5799025816887434476, guid: 6f1aebeb7e9e2f844a6101f396d2115e, type: 3}
       propertyPath: m_Name
       value: Snow
       objectReference: {fileID: 0}
     - target: {fileID: 5799025816887434476, guid: 6f1aebeb7e9e2f844a6101f396d2115e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f1aebeb7e9e2f844a6101f396d2115e, type: 3}
@@ -4945,6 +4964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 547681f92afa3114eb46fd3aaf167417, type: 2}
+  isWeatherChange: 0
 --- !u!114 &597725145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5567,6 +5587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 91724441bb9af344bb7eaa3ed0abc50e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &703551190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6009,6 +6030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 602e66863bdd6084b8571fea0987655e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &744914704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6326,6 +6348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 602e66863bdd6084b8571fea0987655e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &888148587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6493,6 +6516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 547681f92afa3114eb46fd3aaf167417, type: 2}
+  isWeatherChange: 0
 --- !u!114 &924357484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8788,6 +8812,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5056951705168689864, guid: b2f3511f2f65c45428b60588d98440e1, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056951705168689864, guid: b2f3511f2f65c45428b60588d98440e1, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056951705168689864, guid: b2f3511f2f65c45428b60588d98440e1, type: 3}
+      propertyPath: lengthInSec
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5056951705168689870, guid: b2f3511f2f65c45428b60588d98440e1, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -8896,6 +8932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: aef9aedc18df9b249877c39e4072a3da, type: 2}
+  isWeatherChange: 0
 --- !u!114 &994320533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9197,6 +9234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 547681f92afa3114eb46fd3aaf167417, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1028150368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16466,6 +16504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: f8487593ae550194aa726a2b37d70fd6, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1174159442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22739,6 +22778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: cd854ce5bb9cdff4997f0c5c94daf29e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1364299101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23206,6 +23246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: f8487593ae550194aa726a2b37d70fd6, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1460217985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23657,6 +23698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 547681f92afa3114eb46fd3aaf167417, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1547785399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23883,6 +23925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 602e66863bdd6084b8571fea0987655e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1575578232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24125,6 +24168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: f8487593ae550194aa726a2b37d70fd6, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1600089739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24217,6 +24261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 547681f92afa3114eb46fd3aaf167417, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1600937275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24443,6 +24488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: f8487593ae550194aa726a2b37d70fd6, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1666244457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24535,6 +24581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 794f2417aa1df574e8724daa870b95ed, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1675705510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24627,6 +24674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 794f2417aa1df574e8724daa870b95ed, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1694948854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24853,6 +24901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 602e66863bdd6084b8571fea0987655e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1728967029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25110,6 +25159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1737815832}
   - component: {fileID: 1737815831}
+  - component: {fileID: 1737815833}
   m_Layer: 0
   m_Name: TimeManager
   m_TagString: Untagged
@@ -25136,6 +25186,9 @@ MonoBehaviour:
   weekCounter: 0
   weeks: 0
   years: 0
+  light: {fileID: 2036757915}
+  audioList:
+  - {fileID: 1737815833}
 --- !u!4 &1737815832
 Transform:
   m_ObjectHideFlags: 0
@@ -25150,6 +25203,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1737815833
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737815830}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b2aa0de103c69a242b7ea9e66ca9c341, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1743363393
 GameObject:
   m_ObjectHideFlags: 0
@@ -27071,6 +27220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 91724441bb9af344bb7eaa3ed0abc50e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1853386663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28502,6 +28652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 602e66863bdd6084b8571fea0987655e, type: 2}
+  isWeatherChange: 0
 --- !u!114 &1993158946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28669,6 +28820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableDay: {fileID: 11400000, guid: 547681f92afa3114eb46fd3aaf167417, type: 2}
+  isWeatherChange: 0
 --- !u!114 &2018056161
 MonoBehaviour:
   m_ObjectHideFlags: 0

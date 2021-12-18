@@ -16,5 +16,4 @@ MonoBehaviour:
   SeasonIMG: {fileID: 21300000, guid: 194f763b744b39b4b84072df8d8ef5d4, type: 3}
   WeatherIMG:
   - {fileID: 21300000, guid: 9f7feabde9ca252429d272992f2be5d3, type: 3}
-  - {fileID: 0}
   changeWeatherRate: 0
